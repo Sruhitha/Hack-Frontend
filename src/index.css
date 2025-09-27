@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; font-feature-settings: "ss01","cv02","cv03"; }
+.dark :root { color-scheme: dark; }
+
+* { box-sizing: border-box; }
+.gradient-ring { background: radial-gradient(600px 300px at 50% -10%, rgba(99,102,241,.25), rgba(16,185,129,.15), transparent 70%); }
+.glass { backdrop-filter: blur(12px); background: linear-gradient(180deg, rgba(255,255,255,.65), rgba(255,255,255,.50)); }
+.dark .glass { background: linear-gradient(180deg, rgba(24,24,28,.65), rgba(24,24,28,.50)); }
+.card { @apply bg-white dark:bg-ink-800 rounded-2xl border border-ink-100 dark:border-ink-800 shadow-soft; }
+.pill { @apply rounded-full px-3 py-1 text-xs border border-ink-200/70 dark:border-ink-700/70 bg-white/70 dark:bg-ink-800/70; }
